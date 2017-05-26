@@ -1,1 +1,21 @@
-<main></main>
+<main [screen]="screen"></main>
+<div class="wrap">
+	<div class="main" [ngClass]="{show: screen=='main'}" mouseWheel (mouseWheelDown)="mouseWheelDownFunc()">
+		<header></header>
+		<card [lng]="lng"></card>
+		
+		<div class="bottom">
+			<text (onScreenChange)="changeScreen($event)" [lng]="lng"></text>
+			<gallery-btn (click)="changeScreen('second')" [lng]="lng"></gallery-btn>
+		</div>
+		<lang (onLangChange)="changeLang($event)"></lang>
+	</div>
+
+	<div class="second" [ngClass]="{show: screen=='second'}">
+		<div class="top">
+			<main-btn (click)="changeScreen('main')" [lng]="lng"></main-btn>
+		</div>
+		
+		<gallery mouseWheel (mouseWheelUp)="mouseWheelUpFunc()" [lng]="lng"></gallery>
+	</div>
+</div>

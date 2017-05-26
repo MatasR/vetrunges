@@ -1,0 +1,19 @@
+.main-btn {
+	padding: 15px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4));
+    /*border-top: 1px solid #eee;
+    border-right: 1px solid #eee;*/
+
+    text-align: center;
+    font-size: 26px;
+
+    cursor: pointer;
+}
+.main-btn:hover {
+	background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+
+	color: #fff;
+}

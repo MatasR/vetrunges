@@ -1,0 +1,7 @@
+<div class="gallery">
+	<div *ngFor="let row of gallery" class="row">
+		<a *ngFor="let img of row" class="thumbnail fancybox slide" rel="lightbox" title="{{lng.desc[img.id]}}" href="/assets/images/products/{{img.id}}.jpg">
+			<img class="img-responsive" title="{{lng.desc[img.id]}}" src="/assets/images/products/{{img.id}}.jpg"/>
+		</a>
+	</div>
+</div>

@@ -8,6 +8,12 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { CardComponent } from './card/card.component';
 import { TextComponent } from './text/text.component';
+import { GalleryBtnComponent } from './gallery-btn/gallery-btn.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { MainBtnComponent } from './main-btn/main-btn.component';
+import { LangComponent } from './lang/lang.component';
+
+import { MouseWheelDirective } from './mousewheel/mousewheel.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +21,12 @@ import { TextComponent } from './text/text.component';
     HeaderComponent,
     MainComponent,
     CardComponent,
-    TextComponent
+    TextComponent,
+    GalleryBtnComponent,
+    GalleryComponent,
+    MainBtnComponent,
+    MouseWheelDirective,
+    LangComponent
   ],
   imports: [
     BrowserModule,

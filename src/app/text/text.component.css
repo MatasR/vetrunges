@@ -1,0 +1,38 @@
+.text {
+	padding: 15px;
+    width: 400px;
+    max-height: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4));
+    /*border-top: 1px solid #eee;
+    border-right: 1px solid #eee;*/
+}
+
+.text h1 {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.text p {
+	margin: 0;
+	font-size: 18px;
+}
+
+.text p a {
+	color: #fff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.text p a:hover {
+	color:lightblue;
+}
+
+@media only screen and (max-width: 768px) {
+    .text {
+        width: auto;
+        background: rgba(0, 0, 0, 0.4);
+        text-shadow: #000 0px 0px 5px;
+    }
+}

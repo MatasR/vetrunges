@@ -1,1 +1,2 @@
-<div class="bg" imageonlead></div>
+<img src="/assets/images/main.jpg" style="display:none;" (load)="loaded = true"/>
+<div [ngClass]="{'show':loaded, 'paralax':screen=='second'?true:false}" [ngStyle]="{'background-position-y': bgPosY+'%'}" class="bg"></div>
