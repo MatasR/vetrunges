@@ -49,4 +49,8 @@
     .card .content {
         width: calc(100% - 150px - 15px);
     }
+
+    .card .moto {
+        font-size: 15px;
+    }
 }
