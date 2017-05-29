@@ -8,7 +8,11 @@ import { Component, Input, HostListener } from '@angular/core';
 })
 export class MainComponent {
 
+	screen: string;
+	bgPosY: number;
+
 	loaded = false;
+
 
 	ngOnInit(){
 		if(window.innerWidth < 768)

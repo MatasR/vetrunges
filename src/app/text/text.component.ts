@@ -8,6 +8,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class TextComponent {
 
+	lng: any;
+
 	@Output() onScreenChange: EventEmitter<any> = new EventEmitter<any>();
 
 	public screenChange(screen: any): void {
