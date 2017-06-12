@@ -189,8 +189,8 @@ export class AppComponent {
 	public changeScreen(screen: any):void {
 		if(window.innerWidth > 768){
 			this.screen = screen;
-			this.url = screen == 'second' ? 'gallery' : '';
-			this.location.go(this.url);
+			/*this.url = screen == 'second' ? 'gallery' : '';
+			this.location.go(this.url);*/
 		}
 	}
 
